@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sushi Zen - Culinária Japonesa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  
+  <header class="header">
+    <div class="logo">
+      <div class="logo__icon">
+        <img src="images/logo.png" alt="Logo Sushi Zen">
+        <span class="logo__kanji">食</span>
+      </div>
+      <div class="logo__text">
+        <h1 class="logo__name">Sushi Zen</h1>
+        <p class="logo__subtitle">CULINÁRIA JAPONESA</p>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item nav__item--active"><a href="#inicio">Início</a></li>
+        <li class="nav__item"><a href="#cardapio">Cardápio</a></li>
+        <li class="nav__item"><a href="#promocoes">Promoções</a></li>
+        <li class="nav__item"><a href="#sobre">Sobre nós</a></li>
+        <li class="nav__item"><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <div class="cart">
+        <img src="images/sacola.png" alt="Sacola de compras">
+        <span class="cart__badge">2</span>
+      </div>
+      <a href="#cardapio" class="btn btn--header">Faça seu pedido</a>
+    </div>
+  </header>
+
+  <main>
+ <img class="main-flower" src="images/flor-cerejeira.png" alt="">
+<img class="main-flower-2" src="images/flor-historia.png" alt="">
+
+    
+    <section class="hero" id="inicio">
+      <div class="hero__content">
+        <p class="hero__eyebrow">SABORES QUE ENCANTAM</p>
+        <h2 class="hero__title">O melhor da culinária</h2>
+        <p class="hero__script">japonesa</p>
+        <p class="hero__text">
+          Ingredientes selecionados, preparo artesanal<br>
+          e o verdadeiro sabor do Japão para você.
+        </p>
+        <div class="hero__buttons">
+          <a href="#cardapio" class="btn btn--red">Ver cardápio &nbsp; ➜</a>
+          <a href="#sobre" class="btn btn--outline">Saiba mais</a>
+        </div>
+      </div>
+      <div class="hero__image">
+        <img src="images/hero-sushi.png" alt="Prato de sushi variado">
+      </div>
+    </section>
+
+   
+    <section class="menu" id="cardapio">
+      <p class="section__eyebrow">ESCOLHA SEU FAVORITO</p>
+      <h2 class="menu__title">Explore nosso cardápio</h2>
+
+     
+      <div class="menu__grid">
+        <a href="cardapio.html#sushi" class="menu-card">
+          <div class="menu-card__circle"><img src="images/nigiri.png" alt="Sushi"></div>
+          <h3 class="menu-card__name">Sushi</h3>
+          <p class="menu-card__count">17 opções <span>&gt;</span></p>
+        </a>
+
+       <a href="cardapio.html#sashimi" class="menu-card">
+          <div class="menu-card__circle"><img src="images/sashimi.png" alt="Sashimi"></div>
+          <h3 class="menu-card__name">Sashimi</h3>
+          <p class="menu-card__count">12 opções <span>&gt;</span></p>
+       </a>
+
+        <a href="cardapio.html#pratos-quentes" class="menu-card">
+          <div class="menu-card__circle"><img src="images/ramen.png" alt="Pratos quentes"></div>
+          <h3 class="menu-card__name">Pratos Quentes</h3>
+          <p class="menu-card__count">15 opções <span>&gt;</span></p>
+        </a>
+
+        <a href="cardapio.html#sobremesas" class="menu-card">
+          <div class="menu-card__circle"><img src="images/bolinho-de-bacalhau.png" alt="Sobremesas"></div>
+          <h3 class="menu-card__name">Sobremesas</h3>
+          <p class="menu-card__count">8 opções <span>&gt;</span></p>
+        </a>
+      </div>
+
+      <a href="cardapio.html" class="btn btn--menu">Ver cardápio completo &nbsp;➜</a>
+    </section>
+
+    
+    <section class="promo" id="promocoes">
+      <img class="promo__flower-left" src="images/flor-esquerda.png" alt="">
+      <img class="promo__kanji" src="images/kanji-cha.png" alt="">
+
+      <p class="section__eyebrow section__eyebrow--light">PROMOÇÕES</p>
+      <h2 class="promo__title">Sabor em dobro,<br>economia de verdade!</h2>
+
+      
+      <div class="promo__grid">
+        <article class="promo-card">
+          <img class="promo-card__img" src="images/combinado-sakura.png" alt="Combinado Sakura">
+          <h3 class="promo-card__name">Combinado Sakura</h3>
+          <p class="promo-card__desc">30 peças selecionadas</p>
+          <p class="promo-card__price">R$ 89,90</p>
+          <a href="#contato" class="btn btn--card">Peça agora &nbsp;➜</a>
+        </article>
+
+        <article class="promo-card">
+          <img class="promo-card__img" src="images/temaki.png" alt="Temaki Especial">
+          <h3 class="promo-card__name">Temaki Especial</h3>
+          <p class="promo-card__desc">Salmão, atum ou hot</p>
+          <p class="promo-card__price">R$ 18,90</p>
+          <a href="#contato" class="btn btn--card">Peça agora &nbsp;➜</a>
+        </article>
+
+        <article class="promo-card">
+          <img class="promo-card__img" src="images/hot-roll.png" alt="Hot Roll Especial">
+          <h3 class="promo-card__name">Hot Roll Especial</h3>
+          <p class="promo-card__desc">8 peças (diversos sabores)</p>
+          <p class="promo-card__price">R$ 27,90</p>
+          <a href="#contato" class="btn btn--card">Peça agora &nbsp;➜</a>
+        </article>
+      </div>
+    </section>
+
+   
+    <section class="about" id="sobre">
+      <div class="about__content">
+        <p class="section__eyebrow section__eyebrow--light">NOSSA HISTÓRIA</p>
+        <h2 class="about__title">O sabor do Japão<br>desde 2016</h2>
+        <p class="about__text">
+          O Sushi Zen nasceu com o objetivo de levar a verdadeira experiência da culinária
+          japonesa para nossa região. Trabalhamos com ingredientes frescos, preparo
+          artesanal e muito respeito pela tradição japonesa.
+        </p>
+          <a href="sobre.html" class="btn btn--about">Conheça nossa história &nbsp;➜</a>
+      </div>
+      <div class="about__image">
+        <img src="images/restaurante.png" alt="Interior do restaurante Sushi Zen">
+      </div>
+    </section>
+
+    
+    <section class="contact" id="contato">
+      <p class="section__eyebrow section__eyebrow--light">FALE CONOSCO</p>
+      <h2 class="contact__title">Entre em contato com o Sushi Zen</h2>
+
+     
+      <div class="contact__grid">
+        <div class="contact-item">
+          <div class="contact-item__icon"><img src="images/whatsapp.png" alt="WhatsApp"></div>
+          <div class="contact-item__info">
+            <p class="contact-item__label">WhatsApp</p>
+            <p class="contact-item__value">(77) 99999-9999</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item__icon"><img src="images/email.png" alt="E-mail"></div>
+          <div class="contact-item__info">
+            <p class="contact-item__label">E-mail</p>
+            <p class="contact-item__value">contato@sushizen.com</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item__icon"><img src="images/localizacao.png" alt="Endereço"></div>
+          <div class="contact-item__info">
+            <p class="contact-item__label">Endereço</p>
+            <p class="contact-item__value">Livramento de Nossa Senhora - BA</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#contato" class="btn btn--contact">Falar no WhatsApp &nbsp;&nbsp;&nbsp;➜</a>
+    </section>
+
+  </main>
+
+  
+  <footer class="footer">
+    <div class="footer__features">
+      <div class="feature">
+        <img src="images/entrega-rapida.png" alt="Entrega rápida">
+        <div>
+          <h3 class="feature__title">Entrega rápida</h3>
+          <p class="feature__text">Receba seu pedido<br>com agilidade</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <img src="images/qualidade.png" alt="Qualidade premium">
+        <div>
+          <h3 class="feature__title">Qualidade premium</h3>
+          <p class="feature__text">Ingredientes frescos<br>e selecionados</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <img src="images/seguranca.png" alt="Compra segura">
+        <div>
+          <h3 class="feature__title">Compra segura</h3>
+          <p class="feature__text">Seus dados protegidos<br>e pagamento seguro</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <img src="images/atendimento.png" alt="Atendimento">
+        <div>
+          <h3 class="feature__title">Atendimento</h3>
+          <p class="feature__text">Suporte dedicado<br>para você</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="footer__copy">© 2026 Sushi Zen — Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
