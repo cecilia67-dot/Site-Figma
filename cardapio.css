@@ -28,7 +28,7 @@ img {
 }
 
 
-.btn {
+.botao {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,15 +42,15 @@ img {
 .header {
   position: sticky;
   top: 0;
-  z-index: 100;
-  display: flex;                
+  z-index: 10;
+  display: flex;                 
   align-items: center;           
   height: 120px;
-  padding: 0 35px 0 27px;        
+  padding: 0 35px 0 27px;       
   background-color: #1e1e1e;
 }
 
-
+/* Logo */
 .logo {
   display: flex;
   align-items: center;
@@ -59,20 +59,20 @@ img {
 }
 
 
-.logo__icon {
+.logo-imagem {
   position: relative;
   width: 79px;
   height: 79px;
 }
 
-.logo__icon img {
+.logo-imagem img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 
-.logo__kanji {
+.logo-letra {
   position: absolute;
   top: 14px;
   left: 24px;
@@ -81,14 +81,14 @@ img {
   color: #ffffff;
 }
 
-.logo__name {
+.logo-nome {
   font-family: 'Caveat', cursive;
   font-weight: 700;
   font-size: 43px;
   line-height: 1;
 }
 
-.logo__subtitle {
+.logo-subtitulo {
   margin-top: 6px;
   font-size: 10.7px;
   letter-spacing: 2.1px;
@@ -100,28 +100,28 @@ img {
 }
 
 
-.nav__list {
+.lista-menu {
   display: flex;
   gap: 38px;
 }
 
-.nav__item a {
+.item-menu a {
   font-size: 22px;
 }
 
 
-.nav__item--active a {
+.link-ativo a {
   display: inline-block;
   padding-bottom: 8px;
   border-bottom: 5px solid #e53935;
 }
 
 
-.header__actions {
+.acoes-topo {
   display: flex;
   align-items: center;
   gap: 28px;
-  margin-left: auto;             
+  margin-left: auto;            
 }
 
 .cart {
@@ -137,7 +137,7 @@ img {
 }
 
 
-.cart__badge {
+.carrinho-numero {
   position: absolute;
   top: -4px;
   right: -8px;
@@ -151,13 +151,12 @@ img {
   font-size: 13px;
 }
 
-.btn--header {
+.botao-topo {
   width: 236px;
   height: 59px;
   border-radius: 12px;
   font-size: 23px;
 }
-
 
 .banner {
   position: relative;
@@ -168,30 +167,30 @@ img {
   overflow: hidden;
 }
 
-.banner__content {
+.banner-conteudo {
   padding: 67px 0 0 81px;
 }
 
-.banner__eyebrow {
+.banner-chamada {
   color: #e53935;
   font-size: 18px;
   font-weight: 600;
 }
 
-.banner__title {
+.banner-titulo {
   margin-top: 4px;
   font-size: 40px;
   font-weight: 600;
 }
 
-.banner__image img {
+.banner-imagem img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 
-.banner__line {
+.banner-linha {
   position: absolute;
   top: 294px;
   left: 81px;
@@ -207,25 +206,25 @@ img {
 }
 
 
-.tabs {
+.abas {
   position: sticky;
-  top: 120px; 
-  z-index: 5;  
+  top: 120px;                      
+  z-index: 5;                    
   display: flex;
   justify-content: center;
   gap: 103px;
-  padding: 15px 0;
-  background-color: #f6f4f1;
+  padding: 15px 0;                 
+  background-color: #f6f4f1;      
 }
 
-.tab {
+.aba {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 230px;
   height: 58px;
   background-color: rgba(255, 255, 255, 0.15);
-  border: 1px solid #1e1e1e;           
+  border: 1px solid #1e1e1e;          
   border-radius: 15px;                 
   color: #000000;
   font-size: 20px;
@@ -233,12 +232,11 @@ img {
 }
 
 
-.tab--active {
+.aba-ativa {
   background-color: #e53935;
   border-color: #e53935;
   color: #ffffff;
 }
-
 
 
 .menu-section {
@@ -246,7 +244,7 @@ img {
   margin: 0 auto;
   padding: 54px 26px 75px 26px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);   
-  scroll-margin-top: 210px;     
+  scroll-margin-top: 210px;    
 }
 
 
@@ -255,7 +253,7 @@ img {
   padding-bottom: 56px;
 }
 
-.menu-section__title {
+.secao-titulo {
   margin-bottom: 18px;
   font-size: 40px;
   font-weight: 600;
@@ -266,7 +264,7 @@ img {
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 356px);
-  gap: 39px 88px;                
+  gap: 39px 88px;               
 }
 
 
@@ -277,11 +275,11 @@ img {
   background-color: rgba(255, 255, 255, 0.15);
   border: 1px solid #1e1e1e;
   border-radius: 12px;
-  overflow: hidden;            
+  overflow: hidden;              
   color: #000000;
 }
 
-.card__img {
+.card-imagem {
   width: 100%;
   height: 194px;
   object-fit: cover;
@@ -289,31 +287,31 @@ img {
 }
 
 
-.card__body {
+.card-corpo {
   display: flex;
   flex-direction: column;
   flex: 1;
   padding: 16px 24px 0 24px;
 }
 
-.card__name {
+.card-nome {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.3;
 }
 
-.card__desc {
+.card-descricao {
   font-size: 14px;
   line-height: 1.3;
 }
 
 
-.menu-section--sushi .card__desc {
+.secao-sushi .card-descricao {
   font-size: 18px;
 }
 
 
-.card__price {
+.card-preco {
   margin-top: auto;
   margin-bottom: 12px;
   font-size: 25px;
@@ -322,10 +320,10 @@ img {
   color: #e53935;
 }
 
-.btn--card {
+.botao-pedir {
   width: 299px;
   height: 50px;
-  margin: 0 auto 16px auto;      
+  margin: 0 auto 16px auto;     
   border-radius: 6px;
 }
 
@@ -341,10 +339,10 @@ img {
 }
 
 
-.back-link__arrow {
+.voltar-seta {
   display: inline;
   color: #e53935;
-  transform: scaleX(-1);        
+  transform: scaleX(-1);         
 }
 
 
@@ -356,36 +354,36 @@ img {
 }
 
 
-.footer__features {
+.beneficios {
   display: flex;
   justify-content: space-between;
   padding: 0 244px 0 89px;
 }
 
-.feature {
+.beneficio {
   display: flex;
   align-items: flex-start;
   gap: 23px;
 }
 
-.feature img {
+.beneficio img {
   width: 75px;
   height: 75px;
   object-fit: cover;
 }
 
-.feature__title {
+.beneficio-titulo {
   font-size: 18px;
   font-weight: 600;
 }
 
-.feature__text {
+.beneficio-texto {
   margin-top: 4px;
   font-size: 15px;
   line-height: 1.3;
 }
 
-.footer__copy {
+.direitos {
   margin-top: 36px;
   text-align: center;
   font-size: 14px;

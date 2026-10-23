@@ -5,9 +5,10 @@
   padding: 0;
 }
 
+
 html {
-  scroll-padding-top: 120px;   
-  }
+  scroll-padding-top: 120px;
+}
 
 body {
   width: 1440px;          
@@ -31,7 +32,9 @@ img {
 }
 
 
-.section__eyebrow {
+
+
+.chamada {
   color: #e53935;
   font-size: 18px;
   font-weight: 600;
@@ -39,7 +42,7 @@ img {
 }
 
 
-.btn {
+.botao {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,14 +51,14 @@ img {
   font-size: 18px;
 }
 
-.btn--red {
+.botao-vermelho {
   width: 188px;
   height: 50px;
   background-color: #e53935;
   border-radius: 8px;
 }
 
-.btn--outline {
+.botao-borda {
   width: 129px;
   height: 50px;
   background-color: #181a1c;
@@ -67,9 +70,9 @@ img {
 .header {
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;                  
   display: flex;                
-  align-items: center;           
+  align-items: center;          
   height: 120px;
   padding: 0 35px 0 27px;
   background-color: #1e1e1e;
@@ -83,34 +86,35 @@ img {
   width: 340px;
 }
 
-.logo__icon {
+.logo-imagem {
   position: relative;
   width: 79px;
   height: 79px;
 }
 
-.logo__icon img {
+.logo-imagem img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.logo__kanji {
+.logo-letra {
   position: absolute;
   top: 14px;
   left: 24px;
+  z-index: 1;
   font-size: 34px;
   color: #ffffff;
 }
 
-.logo__name {
+.logo-nome {
   font-family: 'Caveat', cursive;
   font-weight: 700;
   font-size: 43px;
   line-height: 1;
 }
 
-.logo__subtitle {
+.logo-subtitulo {
   font-size: 10.7px;
   letter-spacing: 2.1px;
   margin-top: 6px;
@@ -121,29 +125,28 @@ img {
   margin-left: 7px;
 }
 
-.nav__list {
-
-  display: flex;                 
+.lista-menu {
+  display: flex;             
   gap: 38px;
 }
 
-.nav__item a {
+.item-menu a {
   font-size: 22px;
 }
 
 
-.nav__item--active a {
+.link-ativo a {
   display: inline-block;
   padding-bottom: 8px;
   border-bottom: 5px solid #e53935;
 }
 
 
-.header__actions {
+.acoes-topo {
   display: flex;
   align-items: center;
   gap: 28px;
-  margin-left: auto;            
+  margin-left: auto;             
 }
 
 .cart {
@@ -158,7 +161,7 @@ img {
   object-fit: cover;
 }
 
-.cart__badge {
+.carrinho-numero {
   position: absolute;
   top: -4px;
   right: -8px;
@@ -172,7 +175,7 @@ img {
   font-size: 13px;
 }
 
-.btn--header {
+.botao-topo {
   width: 236px;
   height: 59px;
   background-color: #e53935;
@@ -183,18 +186,37 @@ img {
 
 main {
   position: relative;
-  overflow: hidden;       
+  overflow: hidden;      
 }
 
-.main-flower {
+
+.flor-meio {
   position: absolute;
   top: 416px;
   left: 1229px;
-  z-index: 1;             
+  z-index: 1;
   width: 262px;
   height: 262px;
   border-radius: 30px;
   transform: rotate(-100deg);
+}
+
+
+.flor-historia {
+  position: absolute;
+  top: 1902px;
+  left: -147px;           
+  z-index: 3;             
+  width: 520px;
+  height: 347px;
+  object-fit: cover;
+}
+
+
+.flor-meio,
+.flor-historia,
+.flor-promocao {
+  pointer-events: none;
 }
 
 
@@ -210,24 +232,24 @@ main {
   overflow: hidden;
 }
 
-.hero__content {
+.hero-conteudo {
   padding: 96px 0 0 95px;
 }
 
-.hero__eyebrow {
+.hero-chamada {
   color: #e53935;
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-.hero__title {
+.hero-titulo {
   font-size: 42px;
   font-weight: 600;
   line-height: 1.2;
 }
 
-.hero__script {
+.hero-japonesa {
   font-family: 'Caveat', cursive;
   font-size: 90px;
   line-height: 1;
@@ -235,24 +257,22 @@ main {
   margin-bottom: 50px;
 }
 
-.hero__text {
+.hero-paragrafo {
   font-size: 20px;
   line-height: 1.4;
   margin-bottom: 55px;
 }
 
-.hero__buttons {
+.hero-botoes {
   display: flex;
   gap: 33px;
 }
 
-.hero__image img {
+.hero-imagem img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-
 
 
 .menu {
@@ -266,12 +286,12 @@ main {
   overflow: hidden;
 }
 
-.menu .section__eyebrow {
+.menu .chamada {
   align-self: flex-start;
   margin-left: 6px;
 }
 
-.menu__title {
+.titulo-cardapio {
   align-self: flex-start;
   margin-left: 6px;
   margin-top: 8px;
@@ -282,14 +302,15 @@ main {
 }
 
 
-.menu__grid {
+.grade-cardapio {
   display: grid;
   grid-template-columns: repeat(4, 287px);
   gap: 50px;
   margin-bottom: 23px;
 }
 
-.menu-card {
+
+.opcao-cardapio {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -301,8 +322,8 @@ main {
   color: #000000;
 }
 
-.menu-card__circle {
-  display: flex;                 
+.opcao-circulo {
+  display: flex;                
   align-items: center;
   justify-content: center;
   width: 120px;
@@ -311,35 +332,34 @@ main {
   border-radius: 50%;
 }
 
-.menu-card__circle img {
+.opcao-circulo img {
   width: 75px;
   height: 75px;
   object-fit: contain;
 }
 
-.menu-card__name {
+.opcao-nome {
   margin-top: 28px;
   font-size: 25px;
   font-weight: 500;
 }
 
-.menu-card__count {
+.opcao-quantidade {
   margin-top: 16px;
   font-size: 20px;
 }
 
-.menu-card__count span {
+.opcao-quantidade span {
   color: #e53935;
   margin-left: 8px;
 }
 
-.btn--menu {
+.botao-completo {
   width: 278px;
   height: 53px;
   background-color: #e53935;
   border-radius: 10px;
 }
-
 
 
 .promo {
@@ -350,7 +370,7 @@ main {
   overflow: hidden;
 }
 
-.promo__title {
+.titulo-promocao {
   margin-top: 14px;
   margin-bottom: 36px;
   font-size: 32px;
@@ -358,46 +378,45 @@ main {
   line-height: 1.5;
 }
 
-
-.promo__grid {
+.grade-promocao {
   display: grid;
   grid-template-columns: repeat(3, 380px);
   gap: 57px;
 }
 
-.promo-card {
+.cartao-promocao {
   height: 346px;
   padding: 26px 29px 0 29px;
   background-color: #181a1c;
   border-radius: 12px;
 }
 
-.promo-card__img {
+.promo-imagem {
   width: 100%;
   height: 110px;
   object-fit: cover;
   border-radius: 12px;
 }
 
-.promo-card__name {
+.promo-nome {
   margin-top: 13px;
   font-size: 20px;
   font-weight: 700;
 }
 
-.promo-card__desc {
+.promo-descricao {
   margin-top: 6px;
   font-size: 15px;
 }
 
-.promo-card__price {
+.promo-preco {
   margin-top: 14px;
   font-size: 25px;
   font-weight: 700;
   color: #e53935;
 }
 
-.btn--card {
+.botao-pedir {
   width: 100%;
   height: 56px;
   margin-top: 14px;
@@ -406,17 +425,16 @@ main {
   font-size: 20px;
 }
 
-.promo__flower-left {
+.flor-promocao {
   position: absolute;
-  top: 0px;
-  left: -30px;
+  top: 20px;
+  left: -30px;            
   width: 193px;
   height: 193px;
-  object-fit: cover;
-  pointer-events: none; 
+  object-fit: contain;
 }
 
-.promo__kanji {
+.kanji-promocao {
   position: absolute;
   top: 34px;
   right: 80px;
@@ -436,27 +454,28 @@ main {
   overflow: hidden;
 }
 
-.about__content {
+.historia-conteudo {
   padding: 50px 0 0 106px;
 }
 
-.about__title {
+.historia-titulo {
   margin-top: 8px;
   font-size: 36px;
   font-weight: 600;
   line-height: 1.5;
 }
 
-.about__text {
+.historia-texto {
   width: 556px;
   margin-top: 24px;
   font-size: 18px;
   line-height: 1.4;
 }
 
-.btn--about {
-  position: relative; 
-  z-index: 3;
+
+.botao-historia {
+  position: relative;
+  z-index: 10;
   width: 286px;
   height: 53px;
   margin: 28px 0 0 6px;
@@ -464,19 +483,9 @@ main {
   border-radius: 14px;
 }
 
-.about__image img {
+.historia-imagem img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
-
-
-.main-flower-2 {
-  position: absolute;
-  top: 1902px;
-  left: -137px;           
-  width: 520px;
-  height: 347px;
   object-fit: cover;
 }
 
@@ -488,30 +497,30 @@ main {
   border-top: 1px solid #ffffff;
 }
 
-.contact .section__eyebrow {
+.contact .chamada {
   margin-left: 2px;
 }
 
-.contact__title {
+.contato-titulo {
   margin-top: 14px;
   font-size: 32px;
   font-weight: 600;
 }
 
 
-.contact__grid {
+.contato-grade {
   display: grid;
   grid-template-columns: 407px 413px 400px;
   margin-top: 24px;
 }
 
-.contact-item {
+.contato-item {
   display: flex;
   align-items: center;
   gap: 18px;
 }
 
-.contact-item__icon {
+.contato-icone {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -521,23 +530,23 @@ main {
   border-radius: 50%;
 }
 
-.contact-item__icon img {
+.contato-icone img {
   width: 38px;
   height: 38px;
   object-fit: cover;
 }
 
-.contact-item__label {
+.contato-rotulo {
   font-size: 18px;
   font-weight: 600;
 }
 
-.contact-item__value {
+.contato-valor {
   margin-top: 6px;
   font-size: 18px;
 }
 
-.btn--contact {
+.botao-contato {
   width: 290px;
   height: 54px;
   margin: 34px 0 0 447px;
@@ -555,36 +564,36 @@ main {
 }
 
 
-.footer__features {
+.beneficios {
   display: flex;
   justify-content: space-between;
   padding: 0 244px 0 89px;
 }
 
-.feature {
+.beneficio {
   display: flex;
   align-items: flex-start;
   gap: 23px;
 }
 
-.feature img {
+.beneficio img {
   width: 75px;
   height: 75px;
   object-fit: cover;
 }
 
-.feature__title {
+.beneficio-titulo {
   font-size: 18px;
   font-weight: 600;
 }
 
-.feature__text {
+.beneficio-texto {
   margin-top: 4px;
   font-size: 15px;
   line-height: 1.3;
 }
 
-.footer__copy {
+.direitos {
   margin-top: 36px;
   text-align: center;
   font-size: 14px;
